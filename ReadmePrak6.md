@@ -1,2 +1,2 @@
 VALIDASI INPUT PRODUCT
-![alt text](ScreenShot/image.png)
+![alt text](image.png)
