@@ -18,10 +18,6 @@ class CreateNamaModelsTable extends Migration
           ->constrained('users')
           ->onDelete('cascade');
 
-    $table->foreignId('kategori_id')
-          ->constrained('kategoris')
-          ->onDelete('cascade');
-
     $table->timestamps();
 });
     }
