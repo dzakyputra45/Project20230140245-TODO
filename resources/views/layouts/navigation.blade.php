@@ -30,6 +30,10 @@
                             {{ __('Category') }}
                         </x-nav-link>
                     @endcan
+
+                    <x-nav-link href="/docs/api" :active="request()->is('docs/api')">
+                        {{ __('API Docs') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -89,6 +93,10 @@
             <!-- 🔥 MOBILE VERSION JUGA -->
             <x-responsive-nav-link :href="route('product')" :active="request()->routeIs('product')">
                 {{ __('Product') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link href="/docs/api" :active="request()->is('docs/api')">
+                {{ __('API Docs') }}
             </x-responsive-nav-link>
         </div>
 
